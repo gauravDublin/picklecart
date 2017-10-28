@@ -15,7 +15,7 @@
           </li>
         </ng-template>
         <li ngbDropdown *ngIf="appUser; else anonymousUser" class="nav-item dropdown show">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{user.name}}</a>
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{appUser.name}}</a>
           <div ngbDropdownMenu class="dropdown-menu show" aria-labelledby="dropdown01">
             <ng-container *ngIf="appUser.isAdmin">
               <a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a>
